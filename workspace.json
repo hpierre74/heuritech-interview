@@ -1,0 +1,127 @@
+{
+  "version": 2,
+  "projects": {
+    "heuritech-website": {
+      "root": "apps/heuritech-website",
+      "sourceRoot": "apps/heuritech-website/src",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/web:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/heuritech-website",
+            "index": "apps/heuritech-website/src/index.html",
+            "main": "apps/heuritech-website/src/main.tsx",
+            "polyfills": "apps/heuritech-website/src/polyfills.ts",
+            "tsConfig": "apps/heuritech-website/tsconfig.app.json",
+            "assets": [
+              "apps/heuritech-website/src/favicon.ico",
+              "apps/heuritech-website/src/assets"
+            ],
+            "styles": ["apps/heuritech-website/src/styles.css"],
+            "scripts": [],
+            "webpackConfig": "@nrwl/react/plugins/webpack"
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/heuritech-website/src/environments/environment.ts",
+                  "with": "apps/heuritech-website/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/web:dev-server",
+          "options": {
+            "buildTarget": "heuritech-website:build",
+            "hmr": true
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "heuritech-website:build:production",
+              "hmr": false
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/heuritech-website/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/heuritech-website"],
+          "options": {
+            "jestConfig": "apps/heuritech-website/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "heuritech-website-e2e": {
+      "root": "apps/heuritech-website-e2e",
+      "sourceRoot": "apps/heuritech-website-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/heuritech-website-e2e/cypress.json",
+            "tsConfig": "apps/heuritech-website-e2e/tsconfig.e2e.json",
+            "devServerTarget": "heuritech-website:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "heuritech-website:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/heuritech-website-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/react"
+  },
+  "generators": {
+    "@nrwl/react": {
+      "application": {
+        "style": "css",
+        "linter": "eslint",
+        "babel": true
+      },
+      "component": {
+        "style": "css"
+      },
+      "library": {
+        "style": "css",
+        "linter": "eslint"
+      }
+    }
+  },
+  "defaultProject": "heuritech-website"
+}
