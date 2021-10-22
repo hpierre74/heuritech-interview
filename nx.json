@@ -27,12 +27,18 @@
     ]
   },
   "projects": {
+    "api": {
+      "tags": []
+    },
     "heuritech-website": {
       "tags": []
     },
     "heuritech-website-e2e": {
       "tags": [],
       "implicitDependencies": ["heuritech-website"]
+    },
+    "proxy-server": {
+      "tags": []
     }
   }
 }

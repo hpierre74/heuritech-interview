@@ -1,6 +1,27 @@
 {
   "version": 2,
   "projects": {
+    "api": {
+      "root": "libs/api",
+      "sourceRoot": "libs/api/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/api/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/api"],
+          "options": {
+            "jestConfig": "libs/api/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "heuritech-website": {
       "root": "apps/heuritech-website",
       "sourceRoot": "apps/heuritech-website/src",
@@ -99,6 +120,56 @@
           "executor": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": ["apps/heuritech-website-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    },
+    "proxy-server": {
+      "root": "apps/proxy-server",
+      "sourceRoot": "apps/proxy-server/src",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/node:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/proxy-server",
+            "main": "apps/proxy-server/src/main.ts",
+            "tsConfig": "apps/proxy-server/tsconfig.app.json",
+            "assets": ["apps/proxy-server/src/assets"]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false,
+              "fileReplacements": [
+                {
+                  "replace": "apps/proxy-server/src/environments/environment.ts",
+                  "with": "apps/proxy-server/src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "proxy-server:build"
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/proxy-server/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/proxy-server"],
+          "options": {
+            "jestConfig": "apps/proxy-server/jest.config.js",
+            "passWithNoTests": true
           }
         }
       }
