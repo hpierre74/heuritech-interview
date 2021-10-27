@@ -34,3 +34,9 @@ NX_USERNAME_PASSWORD="<YOUR_USERNAME>:<YOUR_PASSWORD>"
 ```bash
 yarn start:project
 ```
+
+- Launch tests
+
+```bash
+yarn e2e heuritech-website-e2e
+```

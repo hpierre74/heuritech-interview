@@ -36,8 +36,7 @@ export const fetchFavorites = (query) => async (dispatch) => {
 
 export const addToFavorites = (id) => async (dispatch) => {
   try {
-    const payload = await putFavorite(id);
-    if (!payload) return null;
+    await putFavorite(id);
 
     return dispatch(setFavorite(id));
   } catch (error) {
@@ -47,8 +46,7 @@ export const addToFavorites = (id) => async (dispatch) => {
 
 export const deleteFromFavorites = (id) => async (dispatch) => {
   try {
-    const payload = await deleteFavorite(id);
-    if (!payload) return null;
+    await deleteFavorite(id);
 
     return dispatch(unsetFavorite(id));
   } catch (error) {

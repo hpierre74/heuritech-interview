@@ -28,8 +28,13 @@ export function Moodboard() {
       aria-labelledby="moodboard-title"
       aria-describedby="moodboard-description"
     >
-      <Paper sx={style}>
-        <Typography id="moodboard-title" variant="h6" component="h2">
+      <Paper sx={style} data-testid="moodboard">
+        <Typography
+          id="moodboard-title"
+          variant="h6"
+          component="h2"
+          data-testid="moodboard-title"
+        >
           {name}
         </Typography>
         <Masonry images={images} />

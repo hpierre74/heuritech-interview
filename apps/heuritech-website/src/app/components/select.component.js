@@ -1,5 +1,6 @@
 import * as React from 'react';
 import _get from 'lodash/get';
+import _kebabCase from 'lodash/kebabCase';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import MUISelect from '@mui/material/Select';
@@ -18,9 +19,16 @@ export function Select({ title, options }) {
         onChange={handleChange}
         displayEmpty
         inputProps={{ 'aria-label': title }}
+        data-testid={`${_kebabCase(title)}-select`}
       >
-        {options.map(({ text, onClick }) => (
-          <MenuItem key={text} onClick={onClick} value={text}>
+        {options.map(({ text, onClick }, index) => (
+          <MenuItem
+            key={text}
+            sx={{ fontStyle: index === 0 ? 'italic' : 'inherit' }}
+            onClick={onClick}
+            value={text}
+            data-testid={`select-item-${_kebabCase(text)}`}
+          >
             {text}
           </MenuItem>
         ))}

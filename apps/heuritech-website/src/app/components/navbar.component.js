@@ -37,13 +37,29 @@ export function NavBar() {
             }}
           />
           <Box sx={{ display: 'flex' }}>
-            <Toggle options={viewOptions(dispatch)} defaultValue={view} />
+            <Toggle
+              options={viewOptions(dispatch)}
+              defaultValue={view}
+              data-testid="trends-view-toggle"
+            />
           </Box>
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
             <Typography>Filters:</Typography>
-            <Select title="Sort by ..." options={sortByOptions(dispatch)} />
-            <Select title="Gender" options={genderOptions(dispatch)} />
-            <Select title="Geozone" options={geozoneOptions(dispatch)} />
+            <Select
+              title="Sort by ..."
+              options={sortByOptions(dispatch)}
+              data-testid="sort-by-select"
+            />
+            <Select
+              title="Gender"
+              options={genderOptions(dispatch)}
+              data-testid="gender-select"
+            />
+            <Select
+              title="Geozone"
+              options={geozoneOptions(dispatch)}
+              data-testid="geozone-select"
+            />
           </Box>
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}></Box>
         </Toolbar>

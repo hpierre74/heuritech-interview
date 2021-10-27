@@ -8,7 +8,7 @@ export class FavoritesController {
   static async getFavorites(req, res) {
     try {
       const payload = await getFavorites(req.query);
-      return res.json(payload);
+      return res.status(200).json(payload);
     } catch (error) {
       return res.status(500).send({ message: error.message });
     }
@@ -17,7 +17,7 @@ export class FavoritesController {
   static async deleteFavorite(req, res) {
     try {
       const payload = await deleteFavorite(req.params.id);
-      return res.json(payload);
+      return res.status(204).send(payload);
     } catch (error) {
       return res.status(500).send({ message: error.message });
     }
@@ -26,7 +26,7 @@ export class FavoritesController {
   static async putFavorite(req, res) {
     try {
       const payload = await putFavorite(req.params.id);
-      return res.json(payload);
+      return res.status(204).send(payload);
     } catch (error) {
       return res.status(500).send({ message: error.message });
     }

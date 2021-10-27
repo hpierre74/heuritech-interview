@@ -1,4 +1,3 @@
-import * as React from 'react';
 import Box from '@mui/material/Box';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
@@ -6,7 +5,12 @@ import ImageListItem from '@mui/material/ImageListItem';
 export default function Masonry({ images }) {
   return (
     <Box sx={{ width: 500, height: 450, overflowY: 'scroll' }}>
-      <ImageList variant="masonry" cols={3} gap={8}>
+      <ImageList
+        variant="masonry"
+        cols={3}
+        gap={8}
+        data-testid="moodboard-masonry"
+      >
         {images.map((src) => (
           <ImageListItem key={src}>
             <img

@@ -1,9 +1,18 @@
-import { Growth } from './atoms/growth.component';
+import { useCallback } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+
 import { Card, CardMedia, Grid, CardActions, CardContent } from '@mui/material';
-import { Name } from './atoms/name.component';
 import Menu from '../../../components/menu.component';
-import { addToFavorites, fetchTrendMoodboard } from '../trends.effects';
-import { useDispatch } from 'react-redux';
+import { Growth } from './atoms/growth.component';
+import { Name } from './atoms/name.component';
+
+import { getTrendsView } from '../trends.selectors';
+import { TRENDS_VIEWS } from '../trends.constants';
+import {
+  addToFavorites,
+  deleteFromFavorites,
+  fetchTrendMoodboard
+} from '../trends.effects';
 
 const hoverStyles = {
   display: 'block',
@@ -25,7 +34,7 @@ const cardStyles = {
     content: '""',
     background: 'linear-gradient(180deg, transparent 60%, rgba(0,0,0,1) 100%)'
   },
-  '&:hover > .foo': hoverStyles
+  '&:hover > .actions': hoverStyles
 };
 
 const contentStyle = {
@@ -40,16 +49,41 @@ const contentStyle = {
   '&:last-child': { padding: 0 }
 };
 
-export const TrendTile = ({ name, image, id, growth }) => {
+export const TrendTile = ({ name, image, id, growth, is_favorite }) => {
+  const view = useSelector(getTrendsView);
+  const isFavorite = view === TRENDS_VIEWS.favorites || is_favorite;
+
   const dispatch = useDispatch();
-  const onFavorite = () => dispatch(addToFavorites(id));
+
+  const onMenuClick = useCallback(
+    () =>
+      isFavorite
+        ? dispatch(deleteFromFavorites(id))
+        : dispatch(addToFavorites(id)),
+    [id, isFavorite, dispatch]
+  );
+
   const onTileClick = () => dispatch(fetchTrendMoodboard({ id, name }));
 
-  const options = [{ text: 'Add to collection', onClick: onFavorite }];
+  const options = [
+    {
+      text: isFavorite ? 'Remove from collection' : 'Add to collection',
+      onClick: onMenuClick
+    }
+  ];
 
   return (
-    <Grid item xs={6} sm={4} md={3} lg={3} xl={2}>
-      <Card sx={cardStyles} onClick={onTileClick}>
+    <Grid
+      component="li"
+      item
+      xs={6}
+      sm={4}
+      md={3}
+      lg={3}
+      xl={2}
+      data-testid={`trend-item`}
+    >
+      <Card data-testid="trend-card" sx={cardStyles} onClick={onTileClick}>
         <CardMedia
           component="img"
           height="200px"
@@ -57,7 +91,7 @@ export const TrendTile = ({ name, image, id, growth }) => {
           alt={name}
         />
         <CardActions
-          className="foo"
+          className="actions"
           sx={{
             display: 'none',
             '&:hover': hoverStyles

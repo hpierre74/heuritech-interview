@@ -9,7 +9,7 @@ describe('App', () => {
     expect(baseElement).toBeTruthy();
   });
 
-  it('should have a greeting as the title', () => {
+  it('should display total trends count', () => {
     const { getByText } = render(<App />);
 
     expect(getByText('Total (')).toBeTruthy();
