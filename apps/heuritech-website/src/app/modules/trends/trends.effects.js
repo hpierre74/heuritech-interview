@@ -6,6 +6,7 @@ import {
   putFavorite
 } from '@heuritech-interview/api';
 import {
+  addTrendsItems,
   setFavorite,
   setMoodboard,
   setTrendsItems,
@@ -18,6 +19,17 @@ export const fetchAllTrends = (query) => async (dispatch) => {
     if (!payload) return null;
 
     return dispatch(setTrendsItems(payload));
+  } catch (error) {
+    return dispatch({ type: 'error/SET_ERROR', payload: error.message });
+  }
+};
+
+export const fetchMoreTrends = (query) => async (dispatch) => {
+  try {
+    const payload = await getTrends(query);
+    if (!payload) return null;
+
+    return dispatch(addTrendsItems(payload));
   } catch (error) {
     return dispatch({ type: 'error/SET_ERROR', payload: error.message });
   }

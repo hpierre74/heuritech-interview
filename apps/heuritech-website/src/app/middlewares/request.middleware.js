@@ -1,4 +1,5 @@
 import {
+  LOAD_MORE_TRENDS,
   SET_TRENDS_FILTER,
   SET_TRENDS_VIEW,
   UNSET_TRENDS_FILTER
@@ -6,7 +7,8 @@ import {
 import { TRENDS_VIEWS } from '../modules/trends/trends.constants';
 import {
   fetchAllTrends,
-  fetchFavorites
+  fetchFavorites,
+  fetchMoreTrends
 } from '../modules/trends/trends.effects';
 import {
   getTrendsFilters,
@@ -19,16 +21,7 @@ export const requestMiddleware =
   (action) => {
     next(action);
     switch (action.type) {
-      case SET_TRENDS_VIEW: {
-        const filters = getTrendsFilters(getState());
-
-        return dispatch(
-          action.payload === TRENDS_VIEWS.all
-            ? fetchAllTrends(filters)
-            : fetchFavorites(filters)
-        );
-      }
-
+      case SET_TRENDS_VIEW:
       case UNSET_TRENDS_FILTER:
       case SET_TRENDS_FILTER: {
         const filters = getTrendsFilters(getState());
@@ -39,6 +32,12 @@ export const requestMiddleware =
             ? fetchAllTrends(filters)
             : fetchFavorites(filters)
         );
+      }
+
+      case LOAD_MORE_TRENDS: {
+        const filters = getTrendsFilters(getState());
+
+        return dispatch(fetchMoreTrends(filters));
       }
 
       default:

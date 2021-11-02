@@ -38,3 +38,14 @@ export const unsetTrendsFilter = (filterKey) => ({
   type: UNSET_TRENDS_FILTER,
   payload: filterKey
 });
+
+export const ADD_TRENDS_ITEMS = 'trends/ADD_TRENDS_ITEMS';
+export const addTrendsItems = (payload) => ({
+  type: ADD_TRENDS_ITEMS,
+  payload: payload
+});
+
+export const LOAD_MORE_TRENDS = 'trends/LOAD_MORE_TRENDS';
+export const loadMoreTrends = () => ({
+  type: LOAD_MORE_TRENDS
+});

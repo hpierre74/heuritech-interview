@@ -1,3 +1,4 @@
+import { PAGE_SIZE } from '@heuritech-interview/api';
 import {
   SET_TRENDS_ITEMS,
   SET_TRENDS_VIEW,
@@ -6,7 +7,9 @@ import {
   SET_MOODBOARD,
   UNSET_MOODBOARD,
   SET_FAVORITE,
-  UNSET_FAVORITE
+  UNSET_FAVORITE,
+  LOAD_MORE_TRENDS,
+  ADD_TRENDS_ITEMS
 } from './trends.actions';
 import _uniqBy from 'lodash/uniqBy';
 import _omit from 'lodash/omit';
@@ -14,7 +17,7 @@ import _omit from 'lodash/omit';
 import { TRENDS_VIEWS } from './trends.constants';
 
 export const initialState = {
-  filters: {},
+  filters: { page: 1, page_size: PAGE_SIZE },
   view: TRENDS_VIEWS.all,
   items: [],
   total: 0,
@@ -31,6 +34,14 @@ export const trendsReducer = (state = initialState, action) => {
       return {
         ...state,
         items: _uniqBy(action.payload.trends, 'id'),
+        total: action.payload.total
+      };
+    }
+
+    case ADD_TRENDS_ITEMS: {
+      return {
+        ...state,
+        items: _uniqBy([...state.items, ...action.payload.trends], 'id'),
         total: action.payload.total
       };
     }
@@ -89,7 +100,7 @@ export const trendsReducer = (state = initialState, action) => {
     case SET_TRENDS_FILTER: {
       return {
         ...state,
-        filters: { ...state.filters, ...action.payload }
+        filters: { ...state.filters, ...action.payload, page: 1 }
       };
     }
 
@@ -98,6 +109,11 @@ export const trendsReducer = (state = initialState, action) => {
         ...state,
         filters: _omit(state.filters, action.payload)
       };
+    }
+
+    case LOAD_MORE_TRENDS: {
+      const { page } = state.filters;
+      return { ...state, filters: { ...state.filters, page: page + 1 } };
     }
 
     default:

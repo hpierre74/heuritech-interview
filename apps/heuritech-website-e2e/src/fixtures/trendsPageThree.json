@@ -1,0 +1,165 @@
+{
+  "trends": [
+    {
+      "id": "ff38cd5a7919d4f66341dc54bdf84ad1",
+      "name": "Regular Length Casual Jersey",
+      "gender": "male",
+      "geozone": "jp",
+      "image": "bde5d501466205c2b2ba2cbfa965a674",
+      "growth": 0.03458036262073816
+    },
+    {
+      "id": "ff0fff8639fdedc3dcce0e210cc6e28b",
+      "name": "Orange Sandals",
+      "gender": "female",
+      "geozone": "us",
+      "image": "8584f140814ac015eb9608075d90cf00",
+      "growth": 0.04074020679029977
+    },
+    {
+      "id": "ff13095729a2a173bfdc9bfb9e2729fa",
+      "name": "White Casual Shorts",
+      "gender": "male",
+      "geozone": "us",
+      "image": "aa9a0e53b28ca888b4d332758c2bfee5",
+      "growth": -0.16092663457434397
+    },
+    {
+      "id": "feefcb88e3b25e81bf2fe37aab823894",
+      "name": "Plaid Tops",
+      "gender": "female",
+      "geozone": "eu",
+      "image": "057abf9ef34eb812228be75dbd479fdb",
+      "growth": 0.026795039105870444
+    },
+    {
+      "id": "ff0c8dbf05487b51a25e933811991c50",
+      "name": "Down Coats",
+      "gender": "male",
+      "geozone": "jp",
+      "image": "d72412881d3241f53e3f108e91e35a0e",
+      "growth": 0.01351543912018971
+    },
+    {
+      "id": "feec40e98a368a0f82fc07dc98eb8a20",
+      "name": "Dark Beige Boots",
+      "gender": "female",
+      "geozone": "cn",
+      "image": "cf30c9b7a923f0f57e39ad350951145d",
+      "growth": -0.007588301166502998
+    },
+    {
+      "id": "fee183eaa321f9f1df9d8da2f9e37e66",
+      "name": "Boat Formal Shoes",
+      "gender": "male",
+      "geozone": "br",
+      "image": "58e5e6cb59d9ca91e782c73061e5393f",
+      "growth": -0.12588724812736574
+    },
+    {
+      "id": "fee064d30eabf50830de74bfd082dc2b",
+      "name": "Cycling Casual Shorts",
+      "gender": "female",
+      "geozone": "cn",
+      "image": "d0d8279dacbe9b3d62e9a41915a051ca",
+      "growth": -0.059172668839937215
+    },
+    {
+      "id": "feea8732cca8a7363e49f9b7b3f99156",
+      "name": "Mid Calf Denim Pants",
+      "gender": "female",
+      "geozone": "jp",
+      "image": "f0322510af92323d9ff12211d33eb676",
+      "growth": -0.0334207865864935
+    },
+    {
+      "id": "fed618f8ee15744821b828c18fd78bee",
+      "name": "Beige Pants",
+      "gender": "female",
+      "geozone": "jp",
+      "image": "0311aea50395d7e0f09591b7de05f491",
+      "growth": 0.0019885748015082694
+    },
+    {
+      "id": "ff17aaf3b8a0726f9d0f105ef0f44196",
+      "name": "Brown Shorts",
+      "gender": "male",
+      "geozone": "cn",
+      "image": "cb727131ba3a73fb4136b1a497a9fcf5",
+      "growth": -0.13959901873234493
+    },
+    {
+      "id": "fed50a9f469dd7e58344154b40b86f6e",
+      "name": "Short Sleeve Poloshirt",
+      "gender": "male",
+      "geozone": "cn",
+      "image": "11ff25175c859c5e4f1ab49b70448ef7",
+      "growth": -0.05295066351354305
+    },
+    {
+      "id": "fed52f2c57ee2ffe478264a32e955342",
+      "name": "Snake Boots",
+      "gender": "female",
+      "geozone": "br",
+      "image": "3f9e6f22de67cbcca7282f4701f90f3e",
+      "growth": -0.06652630100936963
+    },
+    {
+      "id": "fece4412cb50454996db86e449e6cb59",
+      "name": "Horizontal Thick Stripes Casual Jersey",
+      "gender": "male",
+      "geozone": "jp",
+      "image": "d18902e324d2ef968ce3b02579b2ddcb",
+      "growth": -0.10631400400561264
+    },
+    {
+      "id": "ff051b40cd45ad5d285bc31c895df308",
+      "name": "Matte Leather Sneakers",
+      "gender": "female",
+      "geozone": "cn",
+      "image": "59aba5135ca3abb7a9c9f7d6e7b826ce",
+      "growth": -0.021200778469119275
+    },
+    {
+      "id": "feca76ad316c7508b6cf0b242afcc9e4",
+      "name": "Maxi Sleeve Casual Jersey",
+      "gender": "female",
+      "geozone": "eu",
+      "image": "b0f40b74bdbad1bc35a398d5b1d2eb48",
+      "growth": -0.058906906325031816
+    },
+    {
+      "id": "fe9be99ff5843f6db183001837c68696",
+      "name": "Pink Sneakers",
+      "gender": "female",
+      "geozone": "br",
+      "image": "30bcd8a08608e96e2ec1965de7571b6c",
+      "growth": -0.016553841979687012
+    },
+    {
+      "id": "fe9dbff9dbcbe121b294c6f8386a43f9",
+      "name": "Light Pink Shoes",
+      "gender": "female",
+      "geozone": "us",
+      "image": "b0f40b74bdbad1bc35a398d5b1d2eb48",
+      "growth": -0.03027121384459086
+    },
+    {
+      "id": "fe96570d39186b44dac67c9c7be49446",
+      "name": "Beige Boots",
+      "gender": "female",
+      "geozone": "br",
+      "image": "b5314c7e198ab7fd29a079b115f42ec0",
+      "growth": -0.03872077006381025
+    },
+    {
+      "id": "fe981a18d8f89d5976f01bdc0da86631",
+      "name": "Big Dots",
+      "gender": "female",
+      "geozone": "us",
+      "image": "9f44f0908493d10c86ffde3b127b1c51",
+      "growth": 0.0005761218986433114
+    }
+  ],
+  "total": 60
+}

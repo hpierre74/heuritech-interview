@@ -1,10 +1,12 @@
 import { Grid } from '@mui/material';
 import { useSelector } from 'react-redux';
-import { getTrendsItems } from '../../trends/trends.selectors';
+import { canLoadMore, getTrendsItems } from '../../trends/trends.selectors';
+import { LoadMore } from './atoms/loadMore.component';
 import { TrendTile } from './trend.component';
 
 export const TrendsList = () => {
   const items = useSelector(getTrendsItems);
+  const isLoadMoreButtonVisible = useSelector(canLoadMore);
 
   return (
     <Grid
@@ -27,6 +29,11 @@ export const TrendsList = () => {
           data-testid={`trend-item-${index}`}
         />
       ))}
+      {isLoadMoreButtonVisible && (
+        <Grid sx={{ textAlign: 'center' }} item lg={12} md={12} sm={12} xs={12}>
+          <LoadMore />
+        </Grid>
+      )}
     </Grid>
   );
 };
