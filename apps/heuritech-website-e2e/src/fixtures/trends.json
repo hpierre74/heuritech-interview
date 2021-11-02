@@ -1,0 +1,169 @@
+{
+  "trends": [
+    {
+      "id": "ffdd2bdf3a61be110bf18edf5f0cef49",
+      "name": "Other Leather Sandals",
+      "gender": "female",
+      "geozone": "br",
+      "image": "ef2fcdd2914128b835379322a9538579",
+      "growth": -0.023525373020228835,
+      "is_favorite": true
+    },
+    {
+      "id": "fff42dfef5bdac6980de406de6a82084",
+      "name": "Yellow Shoes",
+      "gender": "female",
+      "geozone": "br",
+      "image": "163efb92fe4625161776a0cdc16e2d4f",
+      "growth": 0.03400285809267278,
+      "is_favorite": true
+    },
+    {
+      "id": "fff5c7971895f53e9d564698d849bfa2",
+      "name": "Small Dots Midi Dresses",
+      "gender": "female",
+      "geozone": "br",
+      "image": "4cc2c937ca111cba0e7636a02131de25",
+      "growth": 0.07872957382446977
+    },
+    {
+      "id": "ffd0b45f9c305788611bddc453b5a714",
+      "name": "Plain Pants",
+      "gender": "male",
+      "geozone": "br",
+      "image": "61bc52d77c3538c436f2866250d044f2",
+      "growth": -0.008200566348269156
+    },
+    {
+      "id": "fff2d8ab1fdd7824c383f90c398d2b9d",
+      "name": "Spaghetti Straps Dresses",
+      "gender": "female",
+      "geozone": "br",
+      "image": "48901a6d6c2e2321ec348933cd57fd9e",
+      "growth": -0.0024695488477812777,
+      "is_favorite": true
+    },
+    {
+      "id": "ffe09187b3cb47a821e47e99c07707b8",
+      "name": "Zip Boots",
+      "gender": "male",
+      "geozone": "cn",
+      "image": "7227dd0b9a1292337b93a1681fac2e83",
+      "growth": 0.05004929245268741,
+      "is_favorite": true
+    },
+    {
+      "id": "ffe5214f1c9e135cb384dbf254238bee",
+      "name": "Mohair",
+      "gender": "female",
+      "geozone": "jp",
+      "image": "f0a602857ea8832ce417109ed6820f83",
+      "growth": -0.03826488427416741
+    },
+    {
+      "id": "ffcf2d4b6bb057326345899516a6f42e",
+      "name": "Other Fabric Midi Dresses",
+      "gender": "female",
+      "geozone": "eu",
+      "image": "ba30ad61ea257263d103a39de18b8d45",
+      "growth": 0.04292725911734152
+    },
+    {
+      "id": "ffc9939e1744157cc0ae073177536dd6",
+      "name": "Yellow Orange Casual Jersey",
+      "gender": "female",
+      "geozone": "eu",
+      "image": "805efccaae8dec0013a3bb38bd7c7626",
+      "growth": -0.050081360574244616
+    },
+    {
+      "id": "ffc99923c987fd68c55a32974268c89d",
+      "name": "Warm Tones Shirt Formal",
+      "gender": "female",
+      "geozone": "cn",
+      "image": "ad75e07b4996f432f9eb04abb00a59d1",
+      "growth": 0.005572525211011259
+    },
+    {
+      "id": "ffc891e6f866f68d3413ccd68db08594",
+      "name": "Off Shoulder Other Woven",
+      "gender": "female",
+      "geozone": "br",
+      "image": "0666c2fa84fbdac7d95e48b951ac8c04",
+      "growth": -0.0036921050884030082
+    },
+    {
+      "id": "ffc266d724cdf0ae1970dd02d35479e6",
+      "name": "Ankle Tie Flat Sandals",
+      "gender": "female",
+      "geozone": "cn",
+      "image": "c70388091858a65b073d421f5cb76c08",
+      "growth": -0.26256408393595776
+    },
+    {
+      "id": "ffc1832e256210455be77c21bd632d19",
+      "name": "Straight Jackets",
+      "gender": "female",
+      "geozone": "cn",
+      "image": "6c3984e5f5208605425db3d2a75b75a2",
+      "growth": -0.023164350837981074
+    },
+    {
+      "id": "ffc63cef1853be4c5185ba90db7a3480",
+      "name": "Below Ankle Flat Sandals",
+      "gender": "female",
+      "geozone": "cn",
+      "image": "f7730e5ef974d47f7eb77f9b937abe6a",
+      "growth": 0.010189068556592185
+    },
+    {
+      "id": "ffbf53aa4a49623050c06ad3ba25096e",
+      "name": "Light Brown Sandals",
+      "gender": "male",
+      "geozone": "eu",
+      "image": "209573942688b283a2f4bd82d881a06d",
+      "growth": -0.10466712469254069
+    },
+    {
+      "id": "ffa9e4fb9b6c36dc3e67fe8518599fc3",
+      "name": "Full Formal Pants",
+      "gender": "female",
+      "geozone": "eu",
+      "image": "4c38cf72c785f29879a75a032d728979",
+      "growth": 0.04579073783517673
+    },
+    {
+      "id": "ffeb3da7a144551beabdf3b682e82da0",
+      "name": "Matte Leather Formal Shoes",
+      "gender": "male",
+      "geozone": "jp",
+      "image": "8beed84d2dc51fb3d47df7dc81cc7c89",
+      "growth": 0.027825226521957624
+    },
+    {
+      "id": "ff97f7f34ba9e79bb46e21a8c3ad3a10",
+      "name": "Pastel Purple Tops",
+      "gender": "female",
+      "geozone": "jp",
+      "image": "c39ebd058d4d725de81cc1f5d34a006c",
+      "growth": -0.012911957424275866
+    },
+    {
+      "id": "ff825a7748e46d760c546d6e77992c8b",
+      "name": "Medium Orange Red Shoes",
+      "gender": "female",
+      "geozone": "us",
+      "image": "d3c257c066773693b5da9680601005eb",
+      "growth": -0.07025832699664458
+    },
+    {
+      "id": "ff773e69faa8db936ec7a7e8e3878ebc",
+      "name": "Oversized  Casual Jersey",
+      "gender": "female",
+      "geozone": "us",
+      "image": "dee2b413303d855d74a6933e7df04969",
+      "growth": -0.029874474110543225
+    }
+  ],
+  "total": 1000
+}

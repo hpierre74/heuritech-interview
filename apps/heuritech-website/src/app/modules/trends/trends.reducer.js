@@ -4,7 +4,9 @@ import {
   SET_TRENDS_FILTER,
   UNSET_TRENDS_FILTER,
   SET_MOODBOARD,
-  UNSET_MOODBOARD
+  UNSET_MOODBOARD,
+  SET_FAVORITE,
+  UNSET_FAVORITE
 } from './trends.actions';
 import _uniqBy from 'lodash/uniqBy';
 import _omit from 'lodash/omit';
@@ -30,6 +32,32 @@ export const trendsReducer = (state = initialState, action) => {
         ...state,
         items: _uniqBy(action.payload.trends, 'id'),
         total: action.payload.total
+      };
+    }
+
+    case SET_FAVORITE: {
+      const items = state.items.map((item) =>
+        item.id === action.payload ? { ...item, is_favorite: true } : item
+      );
+      return {
+        ...state,
+        items
+      };
+    }
+
+    case UNSET_FAVORITE: {
+      if (state.view === TRENDS_VIEWS.favorites) {
+        return {
+          ...state,
+          items: state.items.filter((item) => item.id !== action.payload)
+        };
+      }
+
+      return {
+        ...state,
+        items: state.items.map((item) =>
+          item.id === action.payload ? { ...item, is_favorite: false } : item
+        )
       };
     }
 

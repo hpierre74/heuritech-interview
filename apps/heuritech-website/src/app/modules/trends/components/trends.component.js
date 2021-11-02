@@ -7,9 +7,25 @@ export const TrendsList = () => {
   const items = useSelector(getTrendsItems);
 
   return (
-    <Grid container spacing={4}>
-      {items.map((item) => (
-        <TrendTile key={item.id} {...item} />
+    <Grid
+      component="ul"
+      sx={{
+        paddingInlineStart: 'unset',
+        listStyleType: 'none',
+        marginBlockStart: 'unset',
+        marginBlockEnd: 'unset'
+      }}
+      container
+      spacing={4}
+      data-testid="trends-list"
+    >
+      {items.map((item, index) => (
+        <TrendTile
+          key={item.id}
+          {...item}
+          index={index}
+          data-testid={`trend-item-${index}`}
+        />
       ))}
     </Grid>
   );

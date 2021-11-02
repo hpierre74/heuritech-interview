@@ -6,7 +6,11 @@ const growthStyles = {
 };
 
 export const Growth = ({ growth }) => (
-  <Typography sx={growthStyles} color="text.secondary">
+  <Typography
+    sx={growthStyles}
+    color="text.secondary"
+    data-testid="trend-growth"
+  >
     {Math.floor(growth * 100)}%
   </Typography>
 );

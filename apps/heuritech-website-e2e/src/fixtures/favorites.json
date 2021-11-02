@@ -1,0 +1,41 @@
+{
+  "trends": [
+    {
+      "id": "ffdd2bdf3a61be110bf18edf5f0cef49",
+      "name": "Other Leather Sandals",
+      "gender": "female",
+      "geozone": "br",
+      "image": "ef2fcdd2914128b835379322a9538579",
+      "growth": -0.023525373020228835,
+      "creation_date": "2021-10-25"
+    },
+    {
+      "id": "fff42dfef5bdac6980de406de6a82084",
+      "name": "Yellow Shoes",
+      "gender": "female",
+      "geozone": "br",
+      "image": "163efb92fe4625161776a0cdc16e2d4f",
+      "growth": 0.03400285809267278,
+      "creation_date": "2021-10-25"
+    },
+    {
+      "id": "fff2d8ab1fdd7824c383f90c398d2b9d",
+      "name": "Spaghetti Straps Dresses",
+      "gender": "female",
+      "geozone": "br",
+      "image": "48901a6d6c2e2321ec348933cd57fd9e",
+      "growth": -0.0024695488477812777,
+      "creation_date": "2021-10-25"
+    },
+    {
+      "id": "ffe09187b3cb47a821e47e99c07707b8",
+      "name": "Zip Boots",
+      "gender": "male",
+      "geozone": "cn",
+      "image": "7227dd0b9a1292337b93a1681fac2e83",
+      "growth": 0.05004929245268741,
+      "creation_date": "2021-10-25"
+    }
+  ],
+  "total": 4
+}

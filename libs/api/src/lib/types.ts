@@ -16,6 +16,8 @@ export interface Trend {
   geozone: GeoZone;
   image: string;
   growth: number;
+  is_favorite?: boolean;
+  creation_date?: string;
 }
 
 export type Trends = Array<Trend>;

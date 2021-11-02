@@ -29,6 +29,7 @@ export default function Menu({ options }) {
         borderRadius: '10%',
         '&:hover': { background: 'white' }
       }}
+      data-testid="menu"
     >
       <IconButton
         aria-label="more"
@@ -58,7 +59,11 @@ export default function Menu({ options }) {
         }}
       >
         {options.map(({ text, onClick }) => (
-          <MenuItem key={text} onClick={handleClose(onClick)}>
+          <MenuItem
+            key={text}
+            onClick={handleClose(onClick)}
+            data-testid="menu-option"
+          >
             {text}
           </MenuItem>
         ))}

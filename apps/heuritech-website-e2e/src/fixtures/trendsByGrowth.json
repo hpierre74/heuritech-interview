@@ -1,0 +1,165 @@
+{
+  "trends": [
+    {
+      "id": "ffa43e867d6b1c7d799dbf1626b3c22c",
+      "name": "Knife Pleats Skirts",
+      "gender": "female",
+      "geozone": "eu",
+      "image": "a98957c96f24ed76eef3d451b60588b6",
+      "growth": 0.5645427824319442
+    },
+    {
+      "id": "f2b547819343d51b735ae296d23824bc",
+      "name": "Ditsy",
+      "gender": "female",
+      "geozone": "eu",
+      "image": "03c0b3778b072a6f6f6fbd6cdec3cf4a",
+      "growth": 0.3060438521194708
+    },
+    {
+      "id": "e9284f4359dea519e14e7bdc9a3c922b",
+      "name": "Linen",
+      "gender": "male",
+      "geozone": "jp",
+      "image": "21fcae5598b143971fd78e44bc90bb0a",
+      "growth": 0.29422413611084086
+    },
+    {
+      "id": "f2199b11f1edb5ca8c8d59722090ee68",
+      "name": "Square Sandals",
+      "gender": "female",
+      "geozone": "us",
+      "image": "a5dd83b3db765ca2010282ae2fedc840",
+      "growth": 0.2438331580347488
+    },
+    {
+      "id": "e82a561c0f14b79dcd0b2bc2c11baf08",
+      "name": "Deep V Neck Other Knitted",
+      "gender": "female",
+      "geozone": "br",
+      "image": "e9b11a14eee535f38664fa0dc216180e",
+      "growth": 0.19969923526577338
+    },
+    {
+      "id": "f91ea29b180e9efe72ea81cac81c78ce",
+      "name": "Ditsy Blouse",
+      "gender": "female",
+      "geozone": "eu",
+      "image": "537b21e5a052b7e43d9cc27c3e744d32",
+      "growth": 0.1651755642886148
+    },
+    {
+      "id": "f7d52cee36712ec07eae5c5db3602054",
+      "name": "Vinyl Outerwear",
+      "gender": "male",
+      "geozone": "cn",
+      "image": "f46dfa3b9f2aeca9fc0ecc9c56b073b2",
+      "growth": 0.14940543884945723
+    },
+    {
+      "id": "fba9a54d247890f90513c31b75e4a1aa",
+      "name": "Warm Tones Casual Pants",
+      "gender": "female",
+      "geozone": "cn",
+      "image": "fa5aea4bb7d1e814fa299083aa8da2c7",
+      "growth": 0.14232712056090802
+    },
+    {
+      "id": "f1c14530e4d916d989d3a507a3f27180",
+      "name": "Wideleg Denim Pants",
+      "gender": "female",
+      "geozone": "br",
+      "image": "d0b5e01bebc6e9b53d3e7593c85a21bd",
+      "growth": 0.1371144191200162
+    },
+    {
+      "id": "fcd84ad353c8e750490b6002e9f4c917",
+      "name": "Full Sandal Flat Sandals",
+      "gender": "female",
+      "geozone": "us",
+      "image": "83f26a5554167a24ca86d0bde011b995",
+      "growth": 0.13552788870371923
+    },
+    {
+      "id": "ec1125d864fdba1597ef1c872264d6d4",
+      "name": "Lurex Pants",
+      "gender": "female",
+      "geozone": "us",
+      "image": "c21a55440f955b782d8f6c713df8aa29",
+      "growth": 0.12435571925074784
+    },
+    {
+      "id": "fad03c8f65d866f9ee438e21157f491f",
+      "name": "Medium Beige Boots",
+      "gender": "female",
+      "geozone": "jp",
+      "image": "f2b1c89164740baca053547fb0cea18c",
+      "growth": 0.12298532884595859
+    },
+    {
+      "id": "fef46a841b334239b659a5391f57a0fa",
+      "name": "Thong Flat Sandals",
+      "gender": "female",
+      "geozone": "jp",
+      "image": "8f838958675e72514f6a949c053e64ce",
+      "growth": 0.11311796437900057
+    },
+    {
+      "id": "edd7afc24976495d6846270953ed4b35",
+      "name": "Leopard",
+      "gender": "male",
+      "geozone": "br",
+      "image": "4593ba185a0faaa6569741d819e04633",
+      "growth": 0.11289459340308494
+    },
+    {
+      "id": "f582910f48058d91c1504b50c0960b06",
+      "name": "Classic Plain Boots",
+      "gender": "female",
+      "geozone": "cn",
+      "image": "83d321c4781348cf44c32496ff740b54",
+      "growth": 0.11256951429845441
+    },
+    {
+      "id": "f144ec05f636134558dbea1e204171e3",
+      "name": "Quilted Jackets",
+      "gender": "male",
+      "geozone": "us",
+      "image": "4f3efaff2d1c21823d9363b0a2a3d052",
+      "growth": 0.1035007852617924
+    },
+    {
+      "id": "f1055e88270a0d211ce6732d8ac2ce1b",
+      "name": "Spaghetti Straps Dresses",
+      "gender": "female",
+      "geozone": "cn",
+      "image": "362e32e5a90808402aa2325b9ba8fa2f",
+      "growth": 0.09816278900638675
+    },
+    {
+      "id": "f745f4cba71e255362291ba6e9496560",
+      "name": "Plain Boots",
+      "gender": "female",
+      "geozone": "cn",
+      "image": "2141a8c6dc589f6f960e7cd83a116e97",
+      "growth": 0.09727901707696884
+    },
+    {
+      "id": "f8f576d604ab474577ac67b6be5d6bd5",
+      "name": "Velvet Formal Pants",
+      "gender": "female",
+      "geozone": "eu",
+      "image": "dd72fcb31131f466b8e11e1ded83b363",
+      "growth": 0.0969735199573305
+    },
+    {
+      "id": "f7c3225cfee6fdd3d09ce9f64f2b0729",
+      "name": "Black Other Knitted",
+      "gender": "female",
+      "geozone": "br",
+      "image": "9cf1242178320c7733401200272972f8",
+      "growth": 0.09689217050903687
+    }
+  ],
+  "total": 1000
+}

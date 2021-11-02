@@ -1,10 +1,9 @@
 import { combineReducers } from 'redux';
 import { connectRouter } from 'connected-react-router';
-import { BrowserHistory } from 'history';
 
 import { trendsReducer } from '../modules/trends/trends.reducer';
 
-export const createRootReducer = (history: BrowserHistory) =>
+export const createRootReducer = (history) =>
   combineReducers({
     router: connectRouter(history),
     trends: trendsReducer

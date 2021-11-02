@@ -29,6 +29,7 @@ export function Toggle({ options, defaultValue }) {
             bgcolor: 'grey.light',
             color: 'black'
           }}
+          data-testid={`toggle-button-${text.toLowerCase()}`}
         >
           {text}
         </ToggleButton>
