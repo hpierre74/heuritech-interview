@@ -1,0 +1,44 @@
+name: PR-Checks
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - '**.md'
+  pull_request:
+    paths-ignore:
+      - '**.md'
+
+jobs:
+  build:
+    name: Build
+
+    strategy:
+      matrix:
+        runs-on: [ubuntu-latest]
+      fail-fast: false
+
+    runs-on: ${{ matrix.runs-on }}
+
+    steps:
+      - name: Setup kernel, increase watchers
+        run: echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+
+      - name: Set Node.js 14.x
+        uses: actions/setup-node@master
+        with:
+          node-version: 14.x
+
+      - name: Yarn CLI
+        uses: CultureHQ/actions-yarn@v1.0.1
+
+      - run: git fetch --no-tags --prune --depth=5 origin master
+      - run: yarn install --frozen-lockfile
+      - run: yarn affected:e2e --base=origin/master
+        env:
+          CI: true

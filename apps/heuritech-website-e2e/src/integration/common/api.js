@@ -3,6 +3,33 @@
 import { Given, When } from 'cypress-cucumber-preprocessor/steps';
 
 Given('I use the mocked api', () => {
+  cy.intercept(
+    {
+      url: 'http://localhost:3333/trends*',
+      method: 'GET',
+      query: { page: '1', page_size: '20' }
+    },
+    { fixture: 'trends.json' }
+  ).as('baseTrends');
+
+  cy.intercept(
+    {
+      url: 'http://localhost:3333/trends*',
+      method: 'GET',
+      query: { page: '2', page_size: '20' }
+    },
+    { fixture: 'trendsPageTwo.json' }
+  ).as('trendsPageTwo');
+
+  cy.intercept(
+    {
+      url: 'http://localhost:3333/trends*',
+      method: 'GET',
+      query: { page: '3', page_size: '20' }
+    },
+    { fixture: 'trendsPageThree.json' }
+  ).as('trendsPageThree');
+
   cy.intercept({
     url: 'http://localhost:3333/trends/*',
     method: 'PUT'
@@ -13,15 +40,11 @@ Given('I use the mocked api', () => {
     method: 'DELETE'
   }).as('deleteTrend');
 
-  cy.intercept('http://localhost:3333/trends*', { fixture: 'trends.json' }).as(
-    'baseTrends'
-  );
-
   cy.intercept(
     {
       url: 'http://localhost:3333/trends*',
       method: 'GET',
-      query: { sort_by: 'growth' }
+      query: { page: '1', page_size: '20', sort_by: 'growth' }
     },
     { fixture: 'trendsByGrowth.json' }
   ).as('trendsByGrowth');
@@ -29,7 +52,8 @@ Given('I use the mocked api', () => {
   cy.intercept(
     {
       url: 'http://localhost:3333/favorite_trends*',
-      method: 'GET'
+      method: 'GET',
+      query: { page: '1', page_size: '20' }
     },
     { fixture: 'favorites.json' }
   ).as('favoriteTrends');
@@ -38,7 +62,7 @@ Given('I use the mocked api', () => {
     {
       url: 'http://localhost:3333/favorite_trends*',
       method: 'GET',
-      query: { sort_by: 'growth' }
+      query: { page: '1', page_size: '20', sort_by: 'growth' }
     },
     { fixture: 'favoritesByGrowth.json' }
   ).as('favoritesByGrowth');

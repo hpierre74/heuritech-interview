@@ -39,9 +39,11 @@ Feature: Home page
     And I wait for the api response "favoritesByGrowth"
     Then Trends should be sorted by growth
 
-
-
-
-
-
-
+  Scenario: Pagination and load more button visibility
+    When I click on "load more button"
+    And I wait for the api response "trendsPageTwo"
+    Then I should see 40 trend tiles
+    When I click on "load more button"
+    And I wait for the api response "trendsPageThree"
+    Then I should see 60 trend tiles
+    And There should not be a "load more button"

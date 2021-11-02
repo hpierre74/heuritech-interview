@@ -15,6 +15,14 @@ Then('I should not see a {string}', (constantName) => {
   cy.get(getConstant(constantName)).should('not.be.visible');
 });
 
+Then('There should be a {string}', (constantName) => {
+  cy.get(getConstant(constantName)).should('exist');
+});
+
+Then('There should not be a {string}', (constantName) => {
+  cy.get(getConstant(constantName)).should('not.exist');
+});
+
 Then('{string} should contain {string}', (selectorConstant, content) => {
   const selector = getConstant(selectorConstant);
 

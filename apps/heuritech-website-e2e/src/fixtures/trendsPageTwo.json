@@ -1,0 +1,165 @@
+{
+  "trends": [
+    {
+      "id": "ff6d9c4f8ca2f03eb98735b853ecf722",
+      "name": "Cross Straps Flat Sandals",
+      "gender": "female",
+      "geozone": "br",
+      "image": "01c3412c9463dabff18099ff170a58ca",
+      "growth": 0.08877131148271222
+    },
+    {
+      "id": "ff808790acab351e4be82421f22c21fc",
+      "name": "Purple Red Shoes",
+      "gender": "female",
+      "geozone": "jp",
+      "image": "741177f4d43c5cccd13b4de0ca60eea6",
+      "growth": -0.07043656400743814
+    },
+    {
+      "id": "ffa930d3127443ce23b7a58f3d101d59",
+      "name": "Checked Midi Dresses",
+      "gender": "female",
+      "geozone": "jp",
+      "image": "7750d180855b4614e417c6b6873bdcfd",
+      "growth": -0.03306382417854303
+    },
+    {
+      "id": "ffa43e867d6b1c7d799dbf1626b3c22c",
+      "name": "Knife Pleats Skirts",
+      "gender": "female",
+      "geozone": "eu",
+      "image": "a98957c96f24ed76eef3d451b60588b6",
+      "growth": 0.5645427824319442
+    },
+    {
+      "id": "ff96cc1aa3cbde623a975d3c7a41f816",
+      "name": "Pink Tops",
+      "gender": "male",
+      "geozone": "cn",
+      "image": "3b5fe8b30d7b5081538507d557cf3f87",
+      "growth": -0.07170991145298455
+    },
+    {
+      "id": "ff6b1d6e9fbaa902d1c404ceb3c41535",
+      "name": "White Denim Pants",
+      "gender": "male",
+      "geozone": "eu",
+      "image": "8f2aa7b90207d76925651eb784c45a56",
+      "growth": -0.015671493130094305
+    },
+    {
+      "id": "ff601f8c45d8149cf5c81e0aeacdb2c4",
+      "name": "Tank Sleeve Casual Jersey",
+      "gender": "male",
+      "geozone": "br",
+      "image": "79097ac7d2bc9e40978940209c0d2f87",
+      "growth": 0.004932412154418531
+    },
+    {
+      "id": "ff5b07747593e27c20c2c53642b6e4dc",
+      "name": "Corduroy",
+      "gender": "female",
+      "geozone": "br",
+      "image": "b410c22ddcf35b4b92696c42c10e2bde",
+      "growth": 0.07647980264471599
+    },
+    {
+      "id": "ff4f0b65b89a0eca7210e9fdbdf7741f",
+      "name": "Lurex Tops",
+      "gender": "female",
+      "geozone": "eu",
+      "image": "f4f3937cdd09a009b965dee67a2f26ee",
+      "growth": -0.048866869635612264
+    },
+    {
+      "id": "ff4d78ac923ec330eb39a41bf667d937",
+      "name": "Stripes Shirt Casual",
+      "gender": "female",
+      "geozone": "eu",
+      "image": "d70d908f07efcb9b053a1274faccc637",
+      "growth": 0.03798506961650183
+    },
+    {
+      "id": "ff427abb93897d5d8f398b5e888fd61b",
+      "name": "Basic Denim Pants",
+      "gender": "male",
+      "geozone": "cn",
+      "image": "04f4f6dadee0cc2b70b3dc78e409a5ff",
+      "growth": 0.008450415925389754
+    },
+    {
+      "id": "ff4a5577ff5f55defc37a5c15b5679d9",
+      "name": "White",
+      "gender": "female",
+      "geozone": "jp",
+      "image": "fca698a0917ddfcb61fa143e434a3a33",
+      "growth": 0.0016683500793566175
+    },
+    {
+      "id": "ff2e4f68a7c097d16d77047a902edd1e",
+      "name": "Thin Vertical Stripes Pants",
+      "gender": "female",
+      "geozone": "us",
+      "image": "741829effa86d158a81409e14d5379a4",
+      "growth": -0.058846493118811405
+    },
+    {
+      "id": "ff1a87b7595eed51af691a6a4d6c3e3b",
+      "name": "Poplin Shirt Casual",
+      "gender": "male",
+      "geozone": "us",
+      "image": "eb830e72c31944c1f231ca52661f0b60",
+      "growth": -0.06619542987433269
+    },
+    {
+      "id": "ff1f42cdeee978e98167e70673c70d1c",
+      "name": "Brown Shoes",
+      "gender": "male",
+      "geozone": "cn",
+      "image": "c7f5ca0e32949a96767c2412640b4f1d",
+      "growth": -0.0328693093939989
+    },
+    {
+      "id": "ff04e4107610df46e0bbaa355322c8c7",
+      "name": "Blue Outerwear",
+      "gender": "male",
+      "geozone": "br",
+      "image": "6f942f305a39a8b8a72745d68af0f2b3",
+      "growth": -0.012552722411142136
+    },
+    {
+      "id": "fef4d3298099a944142b7f81f1380af3",
+      "name": "Small Dots",
+      "gender": "female",
+      "geozone": "us",
+      "image": "800c8f9312f083dc41c75b442e5bedc3",
+      "growth": -0.001486080480074814
+    },
+    {
+      "id": "fef603625909bb9b0b062712d2d55c1a",
+      "name": "Denim Outerwear",
+      "gender": "female",
+      "geozone": "eu",
+      "image": "c9573b14eb3717153559f7433f0f4b67",
+      "growth": -0.03303040175568439
+    },
+    {
+      "id": "fef46a841b334239b659a5391f57a0fa",
+      "name": "Thong Flat Sandals",
+      "gender": "female",
+      "geozone": "jp",
+      "image": "8f838958675e72514f6a949c053e64ce",
+      "growth": 0.11311796437900057
+    },
+    {
+      "id": "fef39edf41b14f97beb60862c203d91e",
+      "name": "Medium Beige Formal S",
+      "gender": "male",
+      "geozone": "br",
+      "image": "3b02ec8e870e040e1b997c069a67f846",
+      "growth": -0.03391890709244394
+    }
+  ],
+  "total": 60
+}

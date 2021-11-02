@@ -4,6 +4,7 @@ export default {
   'trend item': '$trend-item',
   'trend card': '$trend-card',
   'trend growth': '$trend-growth',
+  'load more button': '$load-more-button',
   moodboard: '$moodboard',
   'moodboard title': '$moodboard-title',
   'moodboard masonry': '$moodboard-masonry',
