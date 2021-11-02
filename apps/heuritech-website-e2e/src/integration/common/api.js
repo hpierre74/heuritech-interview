@@ -7,7 +7,7 @@ Given('I use the mocked api', () => {
     {
       url: 'http://localhost:3333/trends*',
       method: 'GET',
-      query: { page: 1, page_size: 20 }
+      query: { page: '1', page_size: '20' }
     },
     { fixture: 'trends.json' }
   ).as('baseTrends');
@@ -16,7 +16,7 @@ Given('I use the mocked api', () => {
     {
       url: 'http://localhost:3333/trends*',
       method: 'GET',
-      query: { page: 2, page_size: 20 }
+      query: { page: '2', page_size: '20' }
     },
     { fixture: 'trendsPageTwo.json' }
   ).as('trendsPageTwo');
@@ -25,7 +25,7 @@ Given('I use the mocked api', () => {
     {
       url: 'http://localhost:3333/trends*',
       method: 'GET',
-      query: { page: 3, page_size: 20 }
+      query: { page: '3', page_size: '20' }
     },
     { fixture: 'trendsPageThree.json' }
   ).as('trendsPageThree');
@@ -44,7 +44,7 @@ Given('I use the mocked api', () => {
     {
       url: 'http://localhost:3333/trends*',
       method: 'GET',
-      query: { page: 1, page_size: 20, sort_by: 'growth' }
+      query: { page: '1', page_size: '20', sort_by: 'growth' }
     },
     { fixture: 'trendsByGrowth.json' }
   ).as('trendsByGrowth');
@@ -53,7 +53,7 @@ Given('I use the mocked api', () => {
     {
       url: 'http://localhost:3333/favorite_trends*',
       method: 'GET',
-      query: { page: 1, page_size: 20 }
+      query: { page: '1', page_size: '20' }
     },
     { fixture: 'favorites.json' }
   ).as('favoriteTrends');
@@ -62,7 +62,7 @@ Given('I use the mocked api', () => {
     {
       url: 'http://localhost:3333/favorite_trends*',
       method: 'GET',
-      query: { page: 1, page_size: 20, sort_by: 'growth' }
+      query: { page: '1', page_size: '20', sort_by: 'growth' }
     },
     { fixture: 'favoritesByGrowth.json' }
   ).as('favoritesByGrowth');

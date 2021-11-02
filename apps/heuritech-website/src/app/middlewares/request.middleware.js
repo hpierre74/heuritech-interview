@@ -10,10 +10,7 @@ import {
   fetchFavorites,
   fetchMoreTrends
 } from '../modules/trends/trends.effects';
-import {
-  getTrendsFilters,
-  getTrendsView
-} from '../modules/trends/trends.selectors';
+import { getTrendsView } from '../modules/trends/trends.selectors';
 
 export const requestMiddleware =
   ({ dispatch, getState }) =>
@@ -24,20 +21,15 @@ export const requestMiddleware =
       case SET_TRENDS_VIEW:
       case UNSET_TRENDS_FILTER:
       case SET_TRENDS_FILTER: {
-        const filters = getTrendsFilters(getState());
         const view = getTrendsView(getState());
 
         return dispatch(
-          view === TRENDS_VIEWS.all
-            ? fetchAllTrends(filters)
-            : fetchFavorites(filters)
+          view === TRENDS_VIEWS.all ? fetchAllTrends() : fetchFavorites()
         );
       }
 
       case LOAD_MORE_TRENDS: {
-        const filters = getTrendsFilters(getState());
-
-        return dispatch(fetchMoreTrends(filters));
+        return dispatch(fetchMoreTrends());
       }
 
       default:

@@ -12,9 +12,11 @@ import {
   setTrendsItems,
   unsetFavorite
 } from './trends.actions';
+import { getTrendsFilters } from './trends.selectors';
 
-export const fetchAllTrends = (query) => async (dispatch) => {
+export const fetchAllTrends = () => async (dispatch, getState) => {
   try {
+    const query = getTrendsFilters(getState());
     const payload = await getTrends(query);
     if (!payload) return null;
 
@@ -24,8 +26,9 @@ export const fetchAllTrends = (query) => async (dispatch) => {
   }
 };
 
-export const fetchMoreTrends = (query) => async (dispatch) => {
+export const fetchMoreTrends = () => async (dispatch, getState) => {
   try {
+    const query = getTrendsFilters(getState());
     const payload = await getTrends(query);
     if (!payload) return null;
 
@@ -35,8 +38,9 @@ export const fetchMoreTrends = (query) => async (dispatch) => {
   }
 };
 
-export const fetchFavorites = (query) => async (dispatch) => {
+export const fetchFavorites = () => async (dispatch, getState) => {
   try {
+    const query = getTrendsFilters(getState());
     const payload = await getFavorites(query);
     if (!payload) return null;
 

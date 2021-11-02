@@ -46,13 +46,4 @@ Feature: Home page
     When I click on "load more button"
     And I wait for the api response "trendsPageThree"
     Then I should see 60 trend tiles
-    And I should not see a "load more button"
-
-
-
-
-
-
-
-
-
+    And There should not be a "load more button"
